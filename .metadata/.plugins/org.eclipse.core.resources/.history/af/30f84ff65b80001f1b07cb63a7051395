@@ -1,0 +1,20 @@
+package problem1;
+
+public class cat extends animal{
+	private static String color;
+	private String voice_cat;
+	public cat() {
+		super();
+		voice_cat = "myau";
+	}
+	public cat(String name,String voice) {
+		super(name,color);
+		voice_cat = voice;
+	}
+	public String getVoice() {
+		return voice_cat;
+	}
+	public void setVoice(String voice) {
+		voice_cat = voice;
+	}
+}

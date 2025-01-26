@@ -1,0 +1,39 @@
+package bonus4_2;
+import java.util.LinkedList;
+import java.util.Queue;
+public class Minecraft {
+	public static boolean canGo(World w,Slime s,Food f) {
+		int [][] direction = { {0,1} , {1,0} , {0,-1},{-1,0}};
+		boolean [][] visited = new boolean[w.getSize()][w.getSize()];
+		Queue <int[]> q = new LinkedList<>();
+		
+		q.add(new int[] {s.getX(),s.getY(),s.getXp()});
+		visited[s.getX()][s.getY()] = true;
+		
+		while(!q.isEmpty()) {
+			int[] current = q.poll();
+			int x = current[0];
+			int y = current[1];
+			int xp = current[2];
+			
+			if(x== f.getX() && y == f.getY()) {
+				return true;
+			}
+			
+			if(xp<=0) {
+				continue;
+			}
+			
+			for(int[] dir: direction) {
+				int newX = x + dir[0];
+				int newY = y+ dir[1];
+				
+				if(newX >= 0 && newX<w.getSize() && newY>= 0 && newY < w.getSize() && visited[newX][newY]) {
+					visited[newX][newY] = true;
+					q.add(new int[] {newX,newY,xp-1});
+				}
+			}
+		}
+		return false;
+	}
+}

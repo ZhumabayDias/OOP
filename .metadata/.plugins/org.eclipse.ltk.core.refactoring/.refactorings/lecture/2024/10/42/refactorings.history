@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;lecture.Parametr&apos; to &apos;Myclass&apos;&#x0A;- Original project: &apos;lecture&apos;&#x0A;- Original element: &apos;lecture.Parametr&apos;&#x0A;- Renamed element: &apos;lecture.Myclass&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Parametr&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;lecture{Parametr.java[Parametr" matchStrategy="1" name="Myclass" qualified="false" references="true" similarDeclarations="false" stamp="1728870011482" textual="false" version="1.0"/>
+</session>

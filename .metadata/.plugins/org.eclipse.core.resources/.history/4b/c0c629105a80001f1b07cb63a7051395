@@ -1,0 +1,15 @@
+package problem1;
+
+public class test {
+
+	public static void main(String[] args) {
+		cat Cat = new cat();
+		System.out.println(Cat.getVoice());
+		Cat.setName("sfdf");
+		System.out.println(Cat.getName());
+		animal a = new animal();
+		a.setName("grfdsf");
+		Cat.getName();
+	}
+
+}

@@ -1,0 +1,18 @@
+package bonus4_2;
+
+public class Test {
+
+	public static void main(String[] args) {
+		World world = new World();
+        Slime slime = new Slime(0, 0, 10); // Позиция слизи и её XP
+        Food food = new Food(5, 5); // Позиция еды
+
+        if (canGo(world, slime, food)) {
+            System.out.println("Slime can reach the food!");
+        } else {
+            System.out.println("Slime cannot reach the food. Steve will help!");
+        }
+
+	}
+
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="fds/src"/>
+	<classpathentry excluding="first/src/" kind="src" path="second/first/src"/>
+	<classpathentry kind="src" path="second/first/src/first/src"/>
+	<classpathentry kind="src" path="second/src"/>
+	<classpathentry kind="output" path="fds/bin"/>
+</classpath>

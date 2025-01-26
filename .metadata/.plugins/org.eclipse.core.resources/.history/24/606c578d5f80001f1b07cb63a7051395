@@ -1,0 +1,14 @@
+package problem2;
+
+public class StartTriangle {
+	public int width;
+	
+	StartTriangle(int wi){
+		this.width = wi;
+	}
+	public String toString(int width) {
+		for(int i=0;i<width;i++) {
+			return "[*]";
+		}return "";
+	}
+}
